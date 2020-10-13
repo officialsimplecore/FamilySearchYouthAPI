@@ -5,21 +5,21 @@ namespace FamilySearchYouthAPI.Services
     
     public class YearToRange
     {
-            public int[] parseYear(int year, Period[] period)
+            public int parseYear(int year, Period[] period)
             {
-                int[] output = new int[2];
+                int outputId = -1;
                 if ((year < period[0].StartYear) || (year > period[period.Length - 1].EndYear))
-                    return output;
+                    return outputId;
                 for (int i = 0; i < period.Length; i++)
                 {
                     int currentStartYear = period[i].StartYear;
                     int currentEndYear = period[i].EndYear;
                     if (year > currentStartYear )
-                        output[0] = currentStartYear;
+                        outputId = period[i].Id;
                     if (year < currentEndYear)
-                        output[1] = currentEndYear;
+                        outputId = period[i].Id;
                 }
-                return output;
+                return outputId;
             }
     }
 }
