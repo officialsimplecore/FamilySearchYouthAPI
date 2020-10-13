@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FamilySearchYouthAPI.Data;
 using FamilySearchYouthAPI.Models;
+using FamilySearchYouthAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,9 +23,11 @@ namespace FamilySearchYouthAPI.Controllers
     public class RegionsController : ControllerBase
     {
         private readonly DataContext _context;
-        public RegionsController(DataContext context)
+        private readonly YearToRange _yearRangeParse;
+        public RegionsController(DataContext context, YearToRange yearRangeParse)
         {
             _context = context;
+            _yearRangeParse = yearRangeParse;
         }
         
         // Returns all regions without regional information

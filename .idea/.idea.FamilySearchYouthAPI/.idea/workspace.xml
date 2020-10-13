@@ -9,11 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/YearToRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/RegionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/RegionsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +26,9 @@
         <option value="$PROJECT_DIR$/Models/Region.cs" />
         <option value="$PROJECT_DIR$/FamilySearchYouthAPI.sln" />
         <option value="$PROJECT_DIR$/Data/DataContext.cs" />
-        <option value="$PROJECT_DIR$/Controllers/RegionsController.cs" />
         <option value="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" />
         <option value="$PROJECT_DIR$/Services/YearToRange.cs" />
+        <option value="$PROJECT_DIR$/Controllers/RegionsController.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602563163724</updated>
       <workItem from="1602563174499" duration="357000" />
-      <workItem from="1602599969650" duration="2688000" />
+      <workItem from="1602599969650" duration="2874000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602563333923</created>
@@ -97,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602563333923</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create YearToRange algorithm">
+      <created>1602602741826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602602741827</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +124,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Create YearToRange algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create YearToRange algorithm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="441" key="Github.ShareDialog" timestamp="1602563383711">
@@ -131,5 +136,9 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="22" y="204" key="SettingsEditor/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602602544963" />
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602602743121">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602602743121" />
   </component>
 </project>
