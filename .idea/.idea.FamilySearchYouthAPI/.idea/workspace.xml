@@ -11,7 +11,7 @@
     <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="Update database&#10;&#10;This also created a new migration">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Data/DataContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Services/YearToRange.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E4D853CB-655E-40DD-9699-00D48477D6C9/2/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -39,6 +40,7 @@
         <option value="$PROJECT_DIR$/Data/DataContext.cs" />
         <option value="$PROJECT_DIR$/Services/YearToRange.cs" />
         <option value="$PROJECT_DIR$/Controllers/RegionsController.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602563163724</updated>
       <workItem from="1602563174499" duration="357000" />
-      <workItem from="1602599969650" duration="5694000" />
+      <workItem from="1602599969650" duration="6847000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602563333923</created>
@@ -161,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602607899697</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Create Static KML Directory">
+      <created>1602609575618</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602609575618</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +201,8 @@
     <MESSAGE value="Implement period parsing and filtering in controller" />
     <MESSAGE value="Create Periods table migration" />
     <MESSAGE value="Update database&#10;&#10;This also created a new migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update database&#10;&#10;This also created a new migration" />
+    <MESSAGE value="Create Static KML Directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Static KML Directory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602609457550">
@@ -203,22 +213,26 @@
       <screen x="0" y="23" width="1680" height="954" />
     </state>
     <state x="927" y="441" key="Github.ShareDialog/0.23.1680.954@0.23.1680.954" timestamp="1602563383711" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1602603977743">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1602610033937">
+      <screen x="2560" y="595" width="1920" height="1040" />
     </state>
     <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977743" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1602603977743">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.595.1920.1040@2560.595.1920.1040" timestamp="1602610033937" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1602610033937">
+      <screen x="2560" y="595" width="1920" height="1040" />
     </state>
     <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977743" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1602603977742">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.2048.1112/2560.595.1920.1040@2560.595.1920.1040" timestamp="1602610033937" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1602610033937">
+      <screen x="2560" y="595" width="1920" height="1040" />
     </state>
     <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977742" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1602603977743">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.2048.1112/2560.595.1920.1040@2560.595.1920.1040" timestamp="1602610033937" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1602610033937">
+      <screen x="2560" y="595" width="1920" height="1040" />
     </state>
     <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977743" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.2048.1112/2560.595.1920.1040@2560.595.1920.1040" timestamp="1602610033937" />
     <state x="22" y="204" key="SettingsEditor" timestamp="1602602544963">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -227,9 +241,41 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="93" y="93" width="1862" height="926" key="VCS.FileHistoryDialog/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602608161529" />
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602607901742">
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602609577140">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602607901742" />
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602609577140" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/RegionsController.cs</url>
+          <line>36</line>
+          <properties documentPath="E:\Software Development Projects\FamilySearchYouthAPI\Controllers\RegionsController.cs" initialLine="36">
+            <startOffsets>
+              <option value="1037" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1105" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/RegionsController.cs</url>
+          <line>46</line>
+          <properties documentPath="E:\Software Development Projects\FamilySearchYouthAPI\Controllers\RegionsController.cs" initialLine="46">
+            <startOffsets>
+              <option value="1457" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1508" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

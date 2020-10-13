@@ -47,7 +47,7 @@
       </e>
       <e p="Startup.cs" t="Include" />
       <e p="StaticKml" t="Include">
-        <e p="Stake-5.kml" t="Include" />
+        <e p="NewZealand.kml" t="Include" />
       </e>
       <e p="WeatherForecast.cs" t="Include" />
     </e>
