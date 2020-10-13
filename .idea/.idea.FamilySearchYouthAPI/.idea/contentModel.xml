@@ -18,11 +18,11 @@
       <e p="FamilySearchYouthAPI.csproj" t="IncludeRecursive" />
       <e p="FamilySearchYouthAPI.sln" t="IncludeFlat" />
       <e p="fsyp.db" t="Include" />
+      <e p="fsyp.db-shm" t="Include" />
+      <e p="fsyp.db-wal" t="Include" />
       <e p="Migrations" t="Include">
-        <e p="20201012141805_InitialCreate.cs" t="Include" />
-        <e p="20201012141805_InitialCreate.Designer.cs" t="Include" />
-        <e p="20201013154641_PeriodCreation.cs" t="Include" />
-        <e p="20201013154641_PeriodCreation.Designer.cs" t="Include" />
+        <e p="20201013165047_InitialCreate.cs" t="Include" />
+        <e p="20201013165047_InitialCreate.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -46,6 +46,9 @@
         <e p="YearToRange.cs" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
+      <e p="StaticKml" t="Include">
+        <e p="Stake-5.kml" t="Include" />
+      </e>
       <e p="WeatherForecast.cs" t="Include" />
     </e>
   </component>
