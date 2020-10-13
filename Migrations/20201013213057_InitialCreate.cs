@@ -41,7 +41,7 @@ namespace FamilySearchYouthAPI.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Lat = table.Column<double>(nullable: false),
                     Lng = table.Column<double>(nullable: false),
-                    RegionId = table.Column<int>(nullable: true)
+                    RegionId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,7 +51,7 @@ namespace FamilySearchYouthAPI.Migrations
                         column: x => x.RegionId,
                         principalTable: "Regions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
