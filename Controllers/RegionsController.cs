@@ -38,8 +38,8 @@ namespace FamilySearchYouthAPI.Controllers
         
         // Return regional information from a regionId and timePeriod argument
             // Time period is an input as a date range and must be parsed into an ID
-        [HttpGet("{regionId}/{timePeriod}")]
-        public async Task<IActionResult> GetRegion(int regionId, int timePeriod)
+        [HttpGet("{regionId}/{year}")]
+        public async Task<IActionResult> GetRegion(int regionId, int year)
         {
             var region = await _context.RegionalInformation
                 .FirstOrDefaultAsync(c => c.RegionId == regionId);
