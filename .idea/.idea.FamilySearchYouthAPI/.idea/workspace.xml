@@ -8,7 +8,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="">
+    <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="Add Period to DataContext">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/RegionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/RegionsController.cs" afterDir="false" />
     </list>
@@ -20,13 +21,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Services/YearToRange.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Data/DataContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Services/YearToRange.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Models/Region.cs" />
         <option value="$PROJECT_DIR$/FamilySearchYouthAPI.sln" />
-        <option value="$PROJECT_DIR$/Data/DataContext.cs" />
         <option value="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" />
+        <option value="$PROJECT_DIR$/Models/Period.cs" />
+        <option value="$PROJECT_DIR$/Data/DataContext.cs" />
         <option value="$PROJECT_DIR$/Services/YearToRange.cs" />
         <option value="$PROJECT_DIR$/Controllers/RegionsController.cs" />
       </list>
@@ -85,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602563163724</updated>
       <workItem from="1602563174499" duration="357000" />
-      <workItem from="1602599969650" duration="2874000" />
+      <workItem from="1602599969650" duration="3875000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602563333923</created>
@@ -101,7 +111,35 @@
       <option name="project" value="LOCAL" />
       <updated>1602602741827</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Inject YearToRange Parsing Service">
+      <created>1602602919523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602602919523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Move period model class to the Models folder">
+      <created>1602603593714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603593714</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modify algorithm to output the Period ID instead of an array of years">
+      <created>1602603849508</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603849508</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Period to DataContext">
+      <created>1602603888298</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603888298</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,20 +163,40 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Create YearToRange algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create YearToRange algorithm" />
+    <MESSAGE value="Inject YearToRange Parsing Service" />
+    <MESSAGE value="Move period model class to the Models folder" />
+    <MESSAGE value="Modify algorithm to output the Period ID instead of an array of years" />
+    <MESSAGE value="Add Period to DataContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Period to DataContext" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="441" key="Github.ShareDialog" timestamp="1602563383711">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
     <state x="927" y="441" key="Github.ShareDialog/0.23.1680.954@0.23.1680.954" timestamp="1602563383711" />
+    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1602603870222">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870222" />
+    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1602603870221">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870221" />
+    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1602603870221">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870221" />
+    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1602603870222">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870222" />
     <state x="22" y="204" key="SettingsEditor" timestamp="1602602544963">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="22" y="204" key="SettingsEditor/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602602544963" />
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602602743121">
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602603851410">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602602743121" />
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603851410" />
   </component>
 </project>

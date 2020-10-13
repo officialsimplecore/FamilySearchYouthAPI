@@ -23,6 +23,7 @@
         <e p="20201012141805_InitialCreate.Designer.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
+        <e p="Period.cs" t="Include" />
         <e p="Region.cs" t="Include" />
         <e p="RegionalInformation.cs" t="Include" />
       </e>

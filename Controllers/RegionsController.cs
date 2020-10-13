@@ -44,8 +44,12 @@ namespace FamilySearchYouthAPI.Controllers
         [HttpGet("{regionId}/{year}")]
         public async Task<IActionResult> GetRegion(int regionId, int year)
         {
+            var period = await _context.Periods.ToArrayAsync();
+            int periodId = _yearRangeParse.parseYear(year, period);
+            
             var region = await _context.RegionalInformation
-                .FirstOrDefaultAsync(c => c.RegionId == regionId);
+                .Where(information => information.RegionId == regionId)
+                .FirstOrDefaultAsync(c => c.PeriodId == periodId);
             return Ok(region);
         }
 
