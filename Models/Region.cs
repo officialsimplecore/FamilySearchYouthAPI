@@ -11,7 +11,7 @@ namespace FamilySearchYouthAPI.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string KmlUrl { get; set; }
+        public Coordinate[] Coordinates { get; set; }
         public RegionalInformation[] RegionalInformation{ get; set; }
     }
 }

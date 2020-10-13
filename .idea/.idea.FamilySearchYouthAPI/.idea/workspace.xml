@@ -9,9 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="Update database&#10;&#10;This also created a new migration">
+      <change afterPath="$PROJECT_DIR$/Models/Coordinate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/CoordinateParser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/RegionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/RegionsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20201013165047_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20201013165047_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/DataContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Region.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fsyp.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +33,7 @@
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Services/YearToRange.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5EDF430-AB5A-4412-A0B9-E75F3C32EB0A/161/EntityTypeBuilder`.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Data/DataContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Services/YearToRange.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Software Development Projects/FamilySearchYouthAPI/Controllers/RegionsController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -33,14 +42,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Models/Region.cs" />
         <option value="$PROJECT_DIR$/FamilySearchYouthAPI.sln" />
         <option value="$PROJECT_DIR$/FamilySearchYouthAPI.csproj" />
         <option value="$PROJECT_DIR$/Models/Period.cs" />
-        <option value="$PROJECT_DIR$/Data/DataContext.cs" />
         <option value="$PROJECT_DIR$/Services/YearToRange.cs" />
-        <option value="$PROJECT_DIR$/Controllers/RegionsController.cs" />
         <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Models/Coordinate.cs" />
+        <option value="$PROJECT_DIR$/Data/DataContext.cs" />
+        <option value="$PROJECT_DIR$/Models/Region.cs" />
+        <option value="$PROJECT_DIR$/Services/CoordinateParser.cs" />
+        <option value="$PROJECT_DIR$/Controllers/RegionsController.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602563163724</updated>
       <workItem from="1602563174499" duration="357000" />
-      <workItem from="1602599969650" duration="6847000" />
+      <workItem from="1602599969650" duration="7756000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602563333923</created>
@@ -170,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602609575618</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Remove KML Static">
+      <created>1602611066752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602611066752</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +220,8 @@
     <MESSAGE value="Create Periods table migration" />
     <MESSAGE value="Update database&#10;&#10;This also created a new migration" />
     <MESSAGE value="Create Static KML Directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Static KML Directory" />
+    <MESSAGE value="Remove KML Static" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove KML Static" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602609457550">
@@ -241,10 +260,11 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="93" y="93" width="1862" height="926" key="VCS.FileHistoryDialog/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602608161529" />
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602609577140">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="2658" y="868" key="Vcs.Push.Dialog.v2" timestamp="1602611068526">
+      <screen x="2560" y="595" width="1920" height="1040" />
     </state>
     <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602609577140" />
+    <state x="2658" y="868" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@2560.595.1920.1040" timestamp="1602611068526" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,23 +274,23 @@
           <line>36</line>
           <properties documentPath="E:\Software Development Projects\FamilySearchYouthAPI\Controllers\RegionsController.cs" initialLine="36">
             <startOffsets>
-              <option value="1037" />
+              <option value="1045" />
             </startOffsets>
             <endOffsets>
-              <option value="1105" />
+              <option value="1158" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Controllers/RegionsController.cs</url>
-          <line>46</line>
+          <line>47</line>
           <properties documentPath="E:\Software Development Projects\FamilySearchYouthAPI\Controllers\RegionsController.cs" initialLine="46">
             <startOffsets>
-              <option value="1457" />
+              <option value="1510" />
             </startOffsets>
             <endOffsets>
-              <option value="1508" />
+              <option value="1561" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
