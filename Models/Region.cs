@@ -12,6 +12,6 @@ namespace FamilySearchYouthAPI.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string KmlUrl { get; set; }
-        public RegionalInformation RegionalInformation{ get; set; }
+        public RegionalInformation[] RegionalInformation{ get; set; }
     }
 }
