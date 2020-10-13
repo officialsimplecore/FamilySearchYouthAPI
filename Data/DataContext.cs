@@ -23,5 +23,6 @@ namespace FamilySearchYouthAPI.Data
 
         public DbSet<Region> Regions { get; set; }
         public DbSet<RegionalInformation> RegionalInformation { get; set; }
+        public DbSet<Period> Periods { get; set; }
     }
 }
