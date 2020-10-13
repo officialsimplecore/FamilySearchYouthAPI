@@ -1,11 +1,7 @@
-﻿namespace FamilySearchYouthAPI.Services
+﻿using FamilySearchYouthAPI.Models;
+
+namespace FamilySearchYouthAPI.Services
 {
-    public class Period
-    {
-        public int id { get; set; }
-        public int StartYear { get; set; }
-        public int EndYear { get; set; }
-    }
     
     public class YearToRange
     {
