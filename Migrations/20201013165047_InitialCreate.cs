@@ -7,6 +7,20 @@ namespace FamilySearchYouthAPI.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Periods",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    StartYear = table.Column<int>(nullable: false),
+                    EndYear = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Periods", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Regions",
                 columns: table => new
                 {
@@ -68,12 +82,14 @@ namespace FamilySearchYouthAPI.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_RegionalInformation_RegionId",
                 table: "RegionalInformation",
-                column: "RegionId",
-                unique: true);
+                column: "RegionId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Periods");
+
             migrationBuilder.DropTable(
                 name: "RegionalInformation");
 

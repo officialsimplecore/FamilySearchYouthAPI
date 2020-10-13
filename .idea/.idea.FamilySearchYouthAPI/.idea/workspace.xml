@@ -8,10 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="Add Period to DataContext">
+    <list default="true" id="866c6c47-e9f4-40f0-8a35-2640f3315f6b" name="Default Changelist" comment="Create Periods table migration">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FamilySearchYouthAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/RegionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/RegionsController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -95,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602563163724</updated>
       <workItem from="1602563174499" duration="357000" />
-      <workItem from="1602599969650" duration="3875000" />
+      <workItem from="1602599969650" duration="4616000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602563333923</created>
@@ -139,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602603888298</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implement period parsing and filtering in controller">
+      <created>1602603940012</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603940012</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create Periods table migration">
+      <created>1602604032062</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602604032062</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,36 +181,38 @@
     <MESSAGE value="Move period model class to the Models folder" />
     <MESSAGE value="Modify algorithm to output the Period ID instead of an array of years" />
     <MESSAGE value="Add Period to DataContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Period to DataContext" />
+    <MESSAGE value="Implement period parsing and filtering in controller" />
+    <MESSAGE value="Create Periods table migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Periods table migration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="441" key="Github.ShareDialog" timestamp="1602563383711">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
     <state x="927" y="441" key="Github.ShareDialog/0.23.1680.954@0.23.1680.954" timestamp="1602563383711" />
-    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1602603870222">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1602603977743">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870222" />
-    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1602603870221">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977743" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1602603977743">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870221" />
-    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1602603870221">
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977743" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1602603977742">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870221" />
-    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1602603870222">
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977742" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1602603977743">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603870222" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603977743" />
     <state x="22" y="204" key="SettingsEditor" timestamp="1602602544963">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="22" y="204" key="SettingsEditor/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602602544963" />
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602603851410">
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2" timestamp="1602604033619">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602603851410" />
+    <state x="105" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.595.1920.1040@0.0.2048.1112" timestamp="1602604033619" />
   </component>
 </project>

@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FamilySearchYouthAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201013154641_PeriodCreation")]
-    partial class PeriodCreation
+    [Migration("20201013165047_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
