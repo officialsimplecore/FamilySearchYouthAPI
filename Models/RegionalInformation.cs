@@ -29,12 +29,11 @@ namespace FamilySearchYouthAPI.Models
         public string Wildlife { get; set; }
         public string Wars { get; set; }
         public string Migrations { get; set; }
-        public string Folklore { get; set; }
-        public string Holidays { get; set; }
+        public string HolidaysandFolklore { get; set; }
         public string FamousPeople { get; set; }
 
         // Members only
-        public string ChurchOfJesusChristOfLatterDaySaintsStory { get; set; }
+        public string TheChurchStory { get; set; }
         public string Temples { get; set; }
         public string Pioneers { get; set; }
     }

@@ -18,11 +18,11 @@
       <e p="FamilySearchYouthAPI.csproj" t="IncludeRecursive" />
       <e p="FamilySearchYouthAPI.sln" t="IncludeFlat" />
       <e p="fsyp.db" t="Include" />
-      <e p="fsyp.db-shm" t="Include" />
-      <e p="fsyp.db-wal" t="Include" />
       <e p="Migrations" t="Include">
         <e p="20201013213057_InitialCreate.cs" t="Include" />
         <e p="20201013213057_InitialCreate.Designer.cs" t="Include" />
+        <e p="20201014051856_RegionalUpdate.cs" t="Include" />
+        <e p="20201014051856_RegionalUpdate.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
