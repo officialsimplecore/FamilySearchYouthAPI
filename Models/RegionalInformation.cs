@@ -11,26 +11,26 @@ namespace FamilySearchYouthAPI.Models
         public int RegionId { get; set; }
         public string RegionName { get; set; }
         public int PeriodId { get; set; }
-        public string Food { get; set; }
-        public string Clothing { get; set; }
-        public string Religion { get; set; }
-        public string Weather { get; set; }
-        public string Sports { get; set; }
-        public string Music { get; set; }
-        public string FamilyStructure { get; set; }
-        public string Money { get; set; }
-        public string Government { get; set; }
-        public string Economy { get; set; }
-        public string Technology { get; set; }
-        public string Occupations { get; set; }
-        public string Military { get; set; }
-        public string HistoricalEvents { get; set; }
-        public string Geography { get; set; }
-        public string Wildlife { get; set; }
-        public string Wars { get; set; }
-        public string Migrations { get; set; }
-        public string HolidaysandFolklore { get; set; }
-        public string FamousPeople { get; set; }
+        public CardItem Food { get; set; }
+        public CardItem Clothing { get; set; }
+        public CardItem Religion { get; set; }
+        public CardItem Weather { get; set; }
+        public CardItem Sports { get; set; }
+        public CardItem Music { get; set; }
+        public CardItem FamilyStructure { get; set; }
+        public CardItem Money { get; set; }
+        public CardItem Government { get; set; }
+        public CardItem Economy { get; set; }
+        public CardItem Technology { get; set; }
+        public CardItem Occupations { get; set; }
+        public CardItem Military { get; set; }
+        public CardItem HistoricalEvents { get; set; }
+        public CardItem Geography { get; set; }
+        public CardItem Wildlife { get; set; }
+        public CardItem Wars { get; set; }
+        public CardItem Migrations { get; set; }
+        public CardItem HolidaysandFolklore { get; set; }
+        public CardItem FamousPeople { get; set; }
 
         // Members only
         public string TheChurchStory { get; set; }
