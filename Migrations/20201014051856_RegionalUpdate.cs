@@ -6,27 +6,15 @@ namespace FamilySearchYouthAPI.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
+            migrationBuilder.RenameColumn(
                 name: "ChurchOfJesusChristOfLatterDaySaintsStory",
+                newName: "TheChurchStory",
                 table: "RegionalInformation");
 
-            migrationBuilder.DropColumn(
+            migrationBuilder.RenameColumn(
                 name: "Folklore",
+                newName: "HolidaysandFolklore",
                 table: "RegionalInformation");
-
-            migrationBuilder.DropColumn(
-                name: "Holidays",
-                table: "RegionalInformation");
-
-            migrationBuilder.AddColumn<string>(
-                name: "HolidaysandFolklore",
-                table: "RegionalInformation",
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
-                name: "TheChurchStory",
-                table: "RegionalInformation",
-                nullable: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
