@@ -91,5 +91,12 @@ namespace FamilySearchYouthAPI.Controllers
             }
             return Ok();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AddRegionalInformation(RegionalInformation regionalInformation)
+        {
+            _context.Add(regionalInformation);
+            return Ok();
+        }
     }
 }
