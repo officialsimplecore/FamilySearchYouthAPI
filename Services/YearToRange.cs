@@ -17,7 +17,10 @@ namespace FamilySearchYouthAPI.Services
                     if (year >= currentStartYear )
                         outputId = period[i].Id;
                     if (year <= currentEndYear)
+                    {
                         outputId = period[i].Id;
+                        return outputId;
+                    }
                 }
                 return outputId;
             }
