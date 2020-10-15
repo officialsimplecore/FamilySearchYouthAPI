@@ -68,25 +68,10 @@ namespace FamilySearchYouthAPI.Controllers
                 .Include(c => c.Government)
                 .Include(c => c.Migrations)
                 .Include(c => c.Military)
-                .Include(c => c.Money).Include(c => c.Weather)
-                .Include(c => c.Music)
-                .Include(c => c.Occupations)
-                .Include(c => c.Religion)
-                .Include(c => c.Pioneers)
-                .Include(c => c.Technology)
-                .Include(c => c.Temples)
-                .Include(c => c.Wildlife)
+                .Include(c => c.Money)
                 .Include(c => c.Wars)
                 .Include(c => c.HistoricalEvents)
                 .Include(c => c.FamousPeople)
-
-
-
-
-
-
-
-                
                 .Where(information => information.RegionId == regionId)
                 .FirstOrDefaultAsync(c => c.PeriodId == periodId);
             return Ok(region);
